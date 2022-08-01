@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form name="playerNames" id="names" onsubmit=getNames(event)>
+    <label for="firstPlayer">Enter Player 1's name:</label>
+    <input type="text" id="firstPlayer" name="firstPlayer">
+    <label for="secondPlayer">Enter Player 2's name:</label>
+    <input type="text" id="secondPlayer" name="secondPlayer">
+    <button type="submit">Submit</button>
+  </form>
+  <div class="container"></div>
+  <button onclick=Gameboard.resetGame()>Restart Game</button>
+  <div id="gameOverMessage"></div>
+</body>
+</html>
